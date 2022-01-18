@@ -8,8 +8,10 @@ import { Route, Switch } from "react-router-dom"
 import Nav from "./components/Nav"
 import Gallery from "./pages/Gallery"
 import Studio from "./pages/Studio"
-import One from "./pages/One"
+// import One from "./pages/One"
 import Main from "./components/Main"
+import Show from "./pages/Show"
+
 
 
 
@@ -19,21 +21,32 @@ function App() {
     <div className="App">
     
     <Nav />
+
+    <Main />
+
+    
     <Switch>
 
-<Route exact path="/"> <Gallery /> </Route>
+    <Route exact path="/">  </Route>
 
-<Route path="/Studio"> <Studio /> </Route>
+    <Route path="/main/:apartments"
+    render={(routerProps) => <Main {...routerProps} />} />
 
-<Route path="/gallery"> <Gallery /> </Route>
+    <Route exact path="/gallery"> <Gallery /> </Route>
 
-    <Route path="/gallery/:apartment"
-    render={(routerProps) => <Gallery {...routerProps} />} />
-
-
+    <Route path="/show"> <Show /> </Route>
 
 
-       <Route path="/main"> <Main /> </Route>
+
+
+
+  <Route path="/studio"> <Studio /> </Route>
+
+
+   
+
+
+
        
 
 

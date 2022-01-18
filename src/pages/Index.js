@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function Index(props) {
+
 	const [newForm, setNewForm] = useState({
 		unit: '',
 		media: '',
@@ -12,13 +13,13 @@ function Index(props) {
 	const handleChange = (event) => {
 		setNewForm((prevState) => ({
 			...prevState,
-			[event.target.unit]: event.target.value,
+			[event.target.name]: event.target.value,
 		}));
 	};
 
 	const handleSubmit = (event) => {
 		event.preventDefault();
-		props.createPeople(newForm);
+		props.createApartments(newForm);
 		setNewForm({
 			unit: '',
 			media: '',
@@ -29,7 +30,7 @@ function Index(props) {
 	// handleSubmit - will submit our new user for creation
 
 	const loaded = () => {
-		return props.people.map((apartment) => (
+		return props.apartments.map((apartment) => (
 			<div key={apartment._id} className='apartment'>
 				<Link to={`/apartments/${apartment._id}`}>
 					<h1>{apartment.unit}</h1>
@@ -41,16 +42,18 @@ function Index(props) {
 	};
 
 	const loading = () => {
+
 		return <h1>Loading</h1>;
 	};
 
 	  return (
-			<section>
+
+			<div className="form">
 				<form style={{marginTop: '5rem'}} onSubmit={handleSubmit}>
 					<input
 						type='text'
 						value={newForm.unit}
-						unit='unit'
+						name='unit'
 						placeholder='unit'
 						onChange={handleChange}
 					/>
@@ -73,8 +76,9 @@ function Index(props) {
 					<br />
 					<input type='submit' value='Create Apartment' />
 				</form>
-				{props.apartment ? loaded() : loading()}
-			</section>
+
+				{props.apartments ? loaded() : loading()}
+			</div>
 		);
 }
 

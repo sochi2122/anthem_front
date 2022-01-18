@@ -20,6 +20,19 @@ const Nav = (props) =>{
 <div>Main </div>
 </Link>
 
+<Link to="/index">
+<div>Index </div>
+</Link>
+
+<Link to="/show">
+<div>Show </div>
+</Link>
+
+<Link to="/Studio">
+<div>Studio </div>
+</Link>
+
+
         </div>
     )
 }

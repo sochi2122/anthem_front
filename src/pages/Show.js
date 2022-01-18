@@ -6,14 +6,13 @@ function Show(props) {
 
   const apartment = apartments.find((p) => p._id === id)
 
-  // state for form
   const [editForm, setEditForm] = useState(apartment)
 
   // handleChange function for form
   const handleChange = (event) => {
     setEditForm((prevState) => ({
       ...editForm,
-      [event.target.unit]: event.target.value,
+      [event.target.name]: event.target.value,
     }))
   }
 

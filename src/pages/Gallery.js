@@ -2,6 +2,9 @@ import React from 'react'
 import '../index.css';
 import {useState} from "react"
 import Arr from '../components/Arr';
+import '../gallery.css';
+ 
+
 
 const Gallery = (props) => {
 
@@ -11,8 +14,6 @@ const Gallery = (props) => {
     
   
   const [selectedImage, setSelectedImage] = useState(Arr[0]);
-
-
 
   
   
