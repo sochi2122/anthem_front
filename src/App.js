@@ -27,39 +27,16 @@ function App() {
     
     <Switch>
 
-    <Route exact path="/">  </Route>
-
-    <Route path="/main/:apartments"
-    render={(routerProps) => <Main {...routerProps} />} />
-
     <Route exact path="/gallery"> <Gallery /> </Route>
 
     <Route path="/show"> <Show /> </Route>
 
+    <Route path="/studio"> <Studio /> </Route>
+    </Switch>
 
 
+</div>
 
-
-  <Route path="/studio"> <Studio /> </Route>
-
-
-   
-
-
-
-       
-
-
-
-
-          </Switch>
-  
-
-
-
-
-
-    </div>
   );
 }
 

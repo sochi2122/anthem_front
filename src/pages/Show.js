@@ -1,7 +1,9 @@
 import { useState } from "react"
 
 function Show(props) {
+
   const id = props.match.params.id
+  
   const apartments = props.apartments
 
   const apartment = apartments.find((p) => p._id === id)

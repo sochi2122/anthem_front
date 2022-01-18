@@ -8,9 +8,8 @@ const Main = (props) => {
 
   const [apartments, setApartments] = useState(null)
     
-  const URL = "https://anthemapibackend.herokuapp.com/apartments"
-    
-    //const URL  = "https://anthemapiproject3.herokuapp.com/apartments"
+  //const URL = "https://anthemapibackend.herokuapp.com/apartments"
+    const URL  = "https://anthemapiproject3.herokuapp.com/apartments"
 
     const getApartments = async () => {
         const response = await fetch(URL)
