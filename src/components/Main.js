@@ -9,7 +9,7 @@ const Main = (props) => {
   const [apartments, setApartments] = useState(null)
     
   //const URL = "https://anthemapibackend.herokuapp.com/apartments"
-    const URL  = "https://anthemapiproject3.herokuapp.com/apartments"
+    const URL  = "https://anthemapiproject3.herokuapp.com/apartments/"
 
     const getApartments = async () => {
         const response = await fetch(URL)
@@ -21,9 +21,9 @@ const Main = (props) => {
       const createApartments = async (apartment) => {
         // make post request to create people
         await fetch(URL, {
-          method: "POST",
+          method: 'POST',
           headers: {
-            "Content-Type": "Application/json",
+            'Content-Type': 'Application/json',
           },
           body: JSON.stringify(apartment),
         })
@@ -61,17 +61,19 @@ const Main = (props) => {
             <Route exact path="/">
               <Index apartments={apartments} createApartments={createApartments} />
             </Route>
+
             <Route
               path="/apartments/:id"
               render={(rp) => (
-                <Show
+                <Show  {...rp}
                   apartments={apartments}
                   updateApartments={updateApartments}
                   deleteApartments={deleteApartments}
-                  {...rp}
+                 
                 />
-              )}
-            />
+
+              )}/>
+
           </Switch>
         </main>
       )

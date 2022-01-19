@@ -8,7 +8,7 @@ function Show(props) {
 
   const apartment = apartments.find((p) => p._id === id)
 
-  const [editForm, setEditForm] = useState(apartment)
+  const [editForm, setEditForm] = useState(apartment);
 
   // handleChange function for form
   const handleChange = (event) => {
@@ -30,11 +30,21 @@ function Show(props) {
   };
 
     return (
+
+
       <div className="apartment">
         <h1>{apartment.unit}</h1>
         <h2>{apartment.description}</h2>
 
-        <img src={apartment.media} alt={apartment.unit} />
+
+       {
+         apartment.media && 
+         <img src={apartment.media} alt="lol" />
+
+         }
+
+        
+        
         
         <button id="delete" onClick={removeApartment}>
           DELETE
@@ -49,6 +59,7 @@ function Show(props) {
           placeholder="unit"
           onChange={handleChange}
         />
+
         <input
           type="text"
           value={editForm.media}

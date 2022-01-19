@@ -3,17 +3,20 @@ import { Link } from 'react-router-dom';
 
 function Index(props) {
 
-	const [newForm, setNewForm] = useState({
-		unit: '',
-		media: '',
-		description: '',
-	});
+	const [newForm, setNewForm] = useState(
+	// 	{
+	// 	unit: '',
+	// 	media: '',
+	// 	description: '',
+	// }
+	
+	[]);
 
 	// handleChange - will capture user input as it's typed 
 	const handleChange = (event) => {
 		setNewForm((prevState) => ({
 			...prevState,
-			[event.target.unit]: event.target.value,
+			[event.target.name]: event.target.value,
 		}));
 	};
 
@@ -35,7 +38,8 @@ function Index(props) {
 				<Link to={`/apartments/${apartment._id}`}>
 					<h1>{apartment.unit}</h1>
 				</Link>
-				{<img src={apartment.image} alt={apartment.unit} /> }
+				
+				{<img src={apartment.media} alt={apartment.unit} /> }
 				
 				<h3>{apartment.description}</h3>
 			</div>
