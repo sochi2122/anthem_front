@@ -33,7 +33,9 @@ function Show(props) {
       <div className="apartment">
         <h1>{apartment.unit}</h1>
         <h2>{apartment.description}</h2>
+
         <img src={apartment.media} alt={apartment.unit} />
+        
         <button id="delete" onClick={removeApartment}>
           DELETE
         </button>

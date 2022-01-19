@@ -14,6 +14,7 @@ const Main = (props) => {
     const getApartments = async () => {
         const response = await fetch(URL)
         const data = await response.json()
+        console.log('getApartments - data', data);
         setApartments(data)
       }
     
@@ -58,7 +59,7 @@ const Main = (props) => {
         <main>
           <Switch>
             <Route exact path="/">
-              <Index Apartments={apartments} createApartments={createApartments} />
+              <Index apartments={apartments} createApartments={createApartments} />
             </Route>
             <Route
               path="/apartments/:id"

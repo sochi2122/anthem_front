@@ -9,11 +9,11 @@ function Index(props) {
 		description: '',
 	});
 
-	// handleChange - will capture user input as it's typed
+	// handleChange - will capture user input as it's typed 
 	const handleChange = (event) => {
 		setNewForm((prevState) => ({
 			...prevState,
-			[event.target.name]: event.target.value,
+			[event.target.unit]: event.target.value,
 		}));
 	};
 
@@ -35,7 +35,8 @@ function Index(props) {
 				<Link to={`/apartments/${apartment._id}`}>
 					<h1>{apartment.unit}</h1>
 				</Link>
-				{/* <img src={person.image} alt={person.name} /> */}
+				{<img src={apartment.image} alt={apartment.unit} /> }
+				
 				<h3>{apartment.description}</h3>
 			</div>
 		));
@@ -78,6 +79,7 @@ function Index(props) {
 				</form>
 
 				{props.apartments ? loaded() : loading()}
+
 			</div>
 		);
 }
