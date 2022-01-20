@@ -1,28 +1,32 @@
 <h1> Anthem Virtual Tours </h1>
 
-URL:  https://virtualtoursanthemny.netlify.app/
+<h1>
+URL:  
+<a href="https://virtualtoursanthemny.netlify.app/">Anthem Virtual Tours App! </a>
+
+</h1>
 
 
 About the Project
 
-By creating an in depth virtual tour experience. Potential renters can get a feel of the building called the Anthem which is loacted at 222 E 34th St New York Ny 10016. Quite often there are individuals abroad who need to secure housing prior to their arrival to NYC.  In these scenarios the person seeking a new home are unable to view apartments in person. 
+By creating an in depth virtual tour experience. Potential renters can get a feel of the building called the Anthem which is located at 222 E 34th St New York NY 10016. Quite often there are individuals abroad who need to secure housing prior to their arrival to NYC.  In these scenarios the person seeking a new home are unable to view apartments in person. 
 
 These potential clients then need to hire a broker and pay a fee for the broker to view apartments on their behalf.
 
-When these brokers go out to multiple buildings/apartments they will facetime their clients to show them the apartments.
+When these brokers go out to multiple buildings/apartments they will FaceTime their clients to show them the apartments.
 
-Currently there is various forms of media such as photo, video, 3d walkthroughs and floorplans. The goal of this app is to combine all of these items into a single app instead of a user having to go to multiple websites. 
+Currently there is various forms of media such as photo, video, 3d walk-through's and floor plans. The goal of this app is to combine all of these items into a single app instead of a user having to go to multiple websites. 
 
 Currently it is an industry standard to have the videos, 3D tours(ie Matterport media), listing information and other forms of media in different places regardless of who is hosting the content.
 
-By integrating all of this media into one platform. I believer that a user could have a superior experience in comparison to a facetime call. 
+By integrating all of this media into one platform. I believer that a user could have a superior experience in comparison to a FaceTime call. 
 
 
+Trello:
+
+<a href="https://trello.com/invite/b/aufK4vhD/bb9236b493b4ba41d088ff228586b7d9/project-3-anthem-virtual-tours">Project 3 Trello </a>
 
 
-
-
-Trello:  https://trello.com/invite/b/aufK4vhD/bb9236b493b4ba41d088ff228586b7d9/project-3-anthem-virtual-tours
 
 
 See ERD below:
@@ -79,7 +83,7 @@ See ERD below:
 <h2> Getting Started:  </h2>
 
 
-After contacting my office I will redirect client to the app so that they can view the media in advance prior to their arrival at the Anthem for a tour or the app will be used in place of an in person tour if they are unavailable to physcally come to the building in person. 
+After contacting my office I will redirect client to the app so that they can view the media in advance prior to their arrival at the Anthem for a tour or the app will be used in place of an in person tour if they are unavailable to physically come to the building in person. 
 
 
 <h2> Next Steps: </h2>
@@ -88,7 +92,7 @@ I would look to add additional features such as:
 
 <ul> 
 <li> Authentication / login (so that the CRUD operations are only available to myself.) </li>
-<li> Instant Messenging through Chatbot, discord etc.  </li>
+<li> Instant Messaging through Chatbot, discord etc.  </li>
 <li> Hosted Zoom Calls  </li>
 <li> Online Application Integration  </li>
 <li> Lease Signing Integration  </li>
@@ -108,8 +112,9 @@ Other Links:
 </h2>
 
 
-<li> https://www.theanthemny.com/ </li>
 
-<li>  https://www.youtube.com/channel/UCK_NgfGzjUc4BCcn8aDuklQ </li>
+<li>  <a href="https://www.theanthemny.com/">  Anthem NY Website </a> </li>
 
-<li>  https://streeteasy.com/building/the-anthem </li>
+<li>  <a href=" https://www.youtube.com/channel/UCK_NgfGzjUc4BCcn8aDuklQ ">  Anthem NY YouTube Channel</a> </li>
+
+<li> <a href=" https://streeteasy.com/building/the-anthem"> Anthem NY Listings </a>   </li>
