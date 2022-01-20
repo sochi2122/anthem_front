@@ -1,5 +1,6 @@
 import {Link} from 'react-router-dom';
 import React from "react"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const Nav = (props) =>{
@@ -8,7 +9,7 @@ const Nav = (props) =>{
         <div className="nav">
 
 <Link to="/">
-    <div> home </div>
+    <div> Listings </div>
 </Link>
 
 <Link to="/gallery">
@@ -16,17 +17,24 @@ const Nav = (props) =>{
 </Link>
 
 
-<Link to="/main">
-<div>Main </div>
+<Link to="/vr">
+<div>3D Tour </div>
 </Link>
+
+
+
+<Link to="/one">
+<div>One </div>
+</Link>
+
+
+
 
 <Link to="/index">
 <div>Index </div>
 </Link>
 
-<Link to="/show">
-<div>Show </div>
-</Link>
+
 
 <Link to="/Studio">
 <div>Studio </div>
