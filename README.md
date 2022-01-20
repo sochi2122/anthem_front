@@ -1,79 +1,102 @@
-https://virtualtoursanthemny.netlify.app/
-l
-https://anthemapibackend.herokuapp.com/
+### Anthem Virtual Tours
 
 
-# Getting Started with Create React App
+URL:  https://virtualtoursanthemny.netlify.app/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+About the Project
 
-In the project directory, you can run:
+By creating an in depth virtual tour experience. Potential renters can get a feel of the building called the Anthem which is loacted at 222 E 34th St New York Ny 10016. Quite often there are individuals abroad who need to secure housing prior to their arrival to NYC.  In these scenarios the person seeking a new home are unable to view apartments in person. 
 
-### `npm start`
+These potential clients then need to hire a broker and pay a fee for the broker to view apartments on their behalf.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+When these brokers go out to multiple buildings/apartments they will facetime their clients to show them the apartments.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Currently there is various forms of media such as photo, video, 3d walkthroughs and floorplans. The goal of this app is to combine all of these items into a single app instead of a user having to go to multiple websites. 
 
-### `npm test`
+Currently it is an industry standard to have the videos, 3D tours(ie Matterport media), listing information and other forms of media in different places regardless of who is hosting the content.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+By integrating all of this media into one platform. I believer that a user could have a superior experience in comparison to a facetime call. 
 
 
 
 
+
+
+Trello:  https://trello.com/invite/b/aufK4vhD/bb9236b493b4ba41d088ff228586b7d9/project-3-anthem-virtual-tours
+: 
+
+
+See ERD below:
+
+
+//Pic of ERD
+
+
+
+
+
+
+
+
+
+Technologies Used:
+
+-Javascript
+-html5
+-CSS : Bootstrap, Skeleton
+-MongoDB
+-CRUD
+-IMGbb.com for image hosting.
+-Heroku
+-Express
+-React
+-NodeJs
+-Github
+
+
+
+
+
+ScreenShot of Initial Product:
+
+
+
+
+
+//add later
+
+
+
+ScreenShot of Final Product:
+
+
+Getting Started:
+
+After contacting my office. I will redirect client to the app so that they can view the media in advance. 
+
+
+Next Steps:
+
+I would look to add additional features such as: 
+
+-Authentication / login (so that the CRUD operations are only available to myself.)
+-Chatbot
+-Hosted Zoom Calls
+-Online Application Integration
+-Lease Signing Integration
+-VR integration though simple cardboard app or sony headset. (figuring out how to get people to use media is tricky and figuring out a way to get people to use their existing devices in combination with media is even trickier.)
+
+The end goal of this app will to make the entire leasing process hosted through this single app. The shortest path to the end is a straight line and making a process easy and efficient is the best way to do so. If I am get potential renters to utilize the media available and interact with us remotely. We can capture more clients with a higher rate of efficiency.
+
+I am a big believer of a seamless user experience anf if I can integrate VR into the app using the "google cardboard app". It could be the next step in digitizing real estate sales.
+
+
+
+Other Links:
+
+https://www.theanthemny.com/
+
+https://www.youtube.com/channel/UCK_NgfGzjUc4BCcn8aDuklQ
+
+https://streeteasy.com/building/the-anthem

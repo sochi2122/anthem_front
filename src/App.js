@@ -12,7 +12,7 @@ import Studio from "./pages/Studio"
 import Main from "./components/Main"
 import Show from "./pages/Show"
 
-
+import Vr from './components/Vr';
 
 
 
@@ -32,6 +32,9 @@ function App() {
     <Route path="/show"> <Show /> </Route>
 
     <Route path="/studio"> <Studio /> </Route>
+
+    <Route path="/vr"> <Vr /> </Route>
+
     </Switch>
 
 
