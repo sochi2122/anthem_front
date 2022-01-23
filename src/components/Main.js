@@ -2,6 +2,10 @@ import { useEffect, useState } from "react"
 import { Route, Switch } from "react-router-dom"
 import Index from "../pages/Index"
 import Show from "../pages/Show"
+import '../gallery.css';
+import '../index.css';
+import '../bootstrap.css';
+
 
 
 const Main = (props) => {
@@ -58,11 +62,10 @@ const Main = (props) => {
       return (
         <main>
           <Switch>
-            <Route exact path="/">
-              <Index apartments={apartments} createApartments={createApartments} />
-            </Route>
 
-            <Route
+
+          
+          <Route
               path="/apartments/:id"
               render={(rp) => (
                 <Show  {...rp}
@@ -73,6 +76,11 @@ const Main = (props) => {
                 />
 
               )}/>
+              
+            <Route exact path="/">
+              <Index apartments={apartments} createApartments={createApartments} />
+            </Route>
+
 
           </Switch>
         </main>

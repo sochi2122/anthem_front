@@ -1,7 +1,11 @@
 import React from "react";
 import YouTube from "react-youtube";
 import Modal from "react-modal";
-import "./styles.css";
+
+import '../gallery.css';
+import '../index.css';
+import '../bootstrap.css';
+
 
 const modalStyles = {
   content: {

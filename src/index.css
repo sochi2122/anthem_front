@@ -11,16 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.item {
 
+border: 1px red solid;
+width: 40em;
+height: 30em;
+padding: 2em;
+flex-basis: content;
+margin: 2em;
+}
 
-.zillow{
-  border: 1em;
-
-justify-content:center;
-
-
+.iframe {
+display: flex;
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  flex-wrap:wrap;
 
 }
+
+
 .nav {
   display: flex;
   justify-content: space-between;

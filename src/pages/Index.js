@@ -1,5 +1,9 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import '../gallery.css';
+import '../index.css';
+import '../bootstrap.css';
+
 
 function Index(props) {
 
@@ -34,6 +38,9 @@ function Index(props) {
 
 	const loaded = () => {
 		return props.apartments.map((apartment) => (
+			<div className=" grid" >
+
+			<div className ="item"> 
 			<div key={apartment._id} className='apartment'>
 				<Link to={`/apartments/${apartment._id}`}>
 					<h1>{apartment.unit}</h1>
@@ -42,6 +49,8 @@ function Index(props) {
 				{<img src={apartment.media} alt={apartment.unit} /> }
 				
 				<h3>{apartment.description}</h3>
+			</div> 
+			</div>
 			</div>
 		));
 	};
@@ -52,39 +61,86 @@ function Index(props) {
 	};
 
 	  return (
+<>
 
-			<div className="form">
-				<form style={{marginTop: '5rem'}} onSubmit={handleSubmit}>
+<div>
+
+{props.apartments ? loaded() : loading()}
+
+
+
+
+</div>
+
+			
+<br/>
+
+<div>
+
+
+					
+<br />
+<br />
+<br />					
+<br />
+<br />
+<br />
+
+				<form onSubmit={handleSubmit}>
 					<input
-						type='text'
+						type='number'
 						value={newForm.unit}
 						name='unit'
 						placeholder='unit'
 						onChange={handleChange}
+						required
 					/>
 					<br />
+
+
+					
 					<input
-						type='text'
+						type='url'
 						value={newForm.media}
 						name='media'
 						placeholder='media URL'
 						onChange={handleChange}
 					/>
 					<br />
-					<input
+
+
+					  <input
 						type='text'
 						value={newForm.description}
 						name='description'
 						placeholder='description'
+						textarea 
+						required="true" 
+						className="form-control"
+						aria-label="Large" 
+						aria-describedby="inputGroup-sizing-sm"
+						maxlength="800"
 						onChange={handleChange}
-					/>
+
+
+						/>
+
+					
+<br />
+<br />
+<br />
+
 					<br />
-					<input type='submit' value='Create Apartment' />
+					<input button='submit' type='submit' value='Create Apartment' />
 				</form>
+				</div>  
 
-				{props.apartments ? loaded() : loading()}
 
-			</div>
+
+
+				</>
+
+			
 		);
 }
 

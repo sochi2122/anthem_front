@@ -1,3 +1,6 @@
+import '../gallery.css';
+import '../index.css';
+import '../bootstrap.css';
 
 
 const One = (props) => {

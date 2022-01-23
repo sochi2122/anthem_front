@@ -11,7 +11,7 @@ import Studio from "./pages/Studio"
 import Index from "./pages/Index"
 import Main from "./components/Main"
 import Show from "./pages/Show"
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Vr from './components/Vr';
 
 
@@ -19,12 +19,12 @@ import Vr from './components/Vr';
 function App() {
   return (
     <div className="App">
-    
     <Nav />
 
     <Main />
 
-    
+
+ 
     <Switch>
 
     <Route exact path="/gallery"> <Gallery /> </Route>
@@ -36,6 +36,9 @@ function App() {
     <Route path="/vr"> <Vr /> </Route>
 
     <Route path="/index"> <Index /> </Route>
+
+    <Route path="/show"> <Show /> </Route>
+
 
 
 

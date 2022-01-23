@@ -3,7 +3,10 @@ import '../index.css';
 import {useState} from "react"
 import Arr from '../components/Arr';
 import '../gallery.css';
- 
+import '../index.css';
+import '../bootstrap.css';
+
+
 
 
 const Gallery = (props) => {
@@ -18,6 +21,9 @@ const Gallery = (props) => {
   
   
   return (
+
+    <container>
+
     
     <div className="App">
     <div className="wrapper">
@@ -46,7 +52,7 @@ const Gallery = (props) => {
 </div>
 
 
- 
+ </container>
 
 
   );

@@ -1,5 +1,12 @@
 import { useState } from "react"
 
+
+import '../gallery.css';
+import '../index.css';
+import '../bootstrap.css';
+
+//xdetailsz page
+
 function Show(props) {
 
   const id = props.match.params.id

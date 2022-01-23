@@ -1,39 +1,39 @@
-  
-  const Arr = 
-  [
-      
-          'https://images.unsplash.com/photo-1505761671935-60b3a7427bad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60'
+  const Arr = [
+
+
+
+      'https://i.ibb.co/QvXjCpb/Roof-top.jpg',
+
+
+      'https://i.ibb.co/yYp6cbJ/Roof-Top-Lounge0.jpg',
+
+
+      'https://i.ibb.co/NYHvCL9/Pool-Table0.jpg',
+
+
+      'https://i.ibb.co/KWwzzV1/Lounge-Area-with-Fireplace0.jpg',
+
+
+      'https://i.ibb.co/SrDNrFn/Lounge-Area-2-0.jpg',
+
+
+      'https://i.ibb.co/m9bgmWT/Lobby0.jpg',
+
+
+      'https://i.ibb.co/9VK8chv/Hotel-Number0.jpg',
+
+
+      'https://i.ibb.co/5LJ1kND/Gym-4-0.jpg'
+
       ,
 
-      
-          'https://images.unsplash.com/photo-1534351590666-13e3e96b5017?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60'
-      ,
+      'https://i.ibb.co/kSyRzj1/Exterior-View0.jpg',
 
-      
-          'https://images.unsplash.com/photo-1524820197278-540916411e20?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60'
-      ,
+      'https://i.ibb.co/vP1QYt4/Entrance00.jpg',
 
-      
-          'https://images.unsplash.com/photo-1547448526-5e9d57fa28f7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60'
-      ,
+      'https://i.ibb.co/x1yW6gV/Flowers-2-0.jpg'
 
-      
-          'https://images.unsplash.com/photo-1592409065737-a253f2900fa8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60'
-      ,
-
-      
-          'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60'
-      ,
-
-      
-          'https://images.unsplash.com/photo-1505884065216-0661d68e5c47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60'
-      ,
-
-      
-          'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60'
-
-      
-    ];
+  ];
 
 
-    export default Arr;
+  export default Arr;
