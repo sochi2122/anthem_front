@@ -63,7 +63,7 @@ function Index(props) {
 	  return (
 <>
 
-<div>
+<div className="wrapper">
 
 {props.apartments ? loaded() : loading()}
 
