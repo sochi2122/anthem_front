@@ -40,7 +40,7 @@ function Show(props) {
 
 
       <div className="apartment">
-        <h1>{apartment.unit}</h1>
+        <h1>Apt {apartment.unit}</h1>
         <h2>{apartment.description}</h2>
 
 
@@ -52,10 +52,7 @@ function Show(props) {
 
         
         
-        
-        <button id="delete" onClick={removeApartment}>
-          DELETE
-        </button>
+
    
    
       <form onSubmit={handleSubmit}>

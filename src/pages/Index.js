@@ -38,53 +38,66 @@ function Index(props) {
 
 	const loaded = () => {
 		return props.apartments.map((apartment) => (
-			<div className=" grid" >
 
-			<div className ="item"> 
-			<div key={apartment._id} className='apartment'>
+			<>
+
+
+<br></br>
+			<div key={apartment._id} className="col-md-6" >
+
 				<Link to={`/apartments/${apartment._id}`}>
-					<h1>{apartment.unit}</h1>
+				<button>Apt  {apartment.unit}</button>
 				</Link>
-				
+				<br />
+
 				{<img src={apartment.media} alt={apartment.unit} /> }
-				
+								<br />
+
 				<h3>{apartment.description}</h3>
-			</div> 
-			</div>
-			</div>
+				<br />
+
+				<br></br>	<br></br>
+			</div> 			 
+
+			</>
+
 		));
 	};
 
 	const loading = () => {
 
-		return <h1>Loading</h1>;
+		return <img src="https://i.ibb.co/9VK8chv/Hotel-Number0.jpg" alt="ent" width="300px" height="150px" ></img>;
 	};
 
 	  return (
-<>
+  <> 
 
-<div className="wrapper">
-
+<div className="row">
 {props.apartments ? loaded() : loading()}
-
-
-
-
 </div>
+<br />
+<br />
+
+
+
 
 			
 <br/>
 
-<div>
 
 
 					
 <br />
 <br />
-<br />					
+<br />	
+
 <br />
 <br />
 <br />
+<div></div>
+
+<div className="container">
+
 
 				<form onSubmit={handleSubmit}>
 					<input
@@ -94,6 +107,9 @@ function Index(props) {
 						placeholder='unit'
 						onChange={handleChange}
 						required
+						textarea 
+						className="form-control"
+						aria-label="Large" 
 					/>
 					<br />
 
@@ -104,6 +120,10 @@ function Index(props) {
 						value={newForm.media}
 						name='media'
 						placeholder='media URL'
+						textarea 
+						required
+						className="form-control"
+						aria-label="Large" 
 						onChange={handleChange}
 					/>
 					<br />
@@ -115,26 +135,27 @@ function Index(props) {
 						name='description'
 						placeholder='description'
 						textarea 
-						required="true" 
+						required
 						className="form-control"
 						aria-label="Large" 
 						aria-describedby="inputGroup-sizing-sm"
-						maxlength="800"
+						maxLength="800"
 						onChange={handleChange}
 
 
 						/>
 
 					
-<br />
-<br />
-<br />
+
 
 					<br />
 					<input button='submit' type='submit' value='Create Apartment' />
 				</form>
 				</div>  
 
+
+
+			
 
 
 

@@ -21,9 +21,8 @@ const Nav = (props) =>{
 
 
           <Link to="/gallery">
-        <button className="navbar-brand" type="button" >
-        <a className="nav-link" href="/gallery">Gallery</a>
-        </button>    </Link>
+        <button type="button" className="nav-link" >Gallery </button>
+         </Link>  
 
 
 
