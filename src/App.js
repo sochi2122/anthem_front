@@ -19,13 +19,17 @@ import Vr from './components/Vr';
 function App() {
   return (
     <div className="App">
+    
+
+    
     <Nav />
 
     <Main />
+    
+    <Switch>
 
 
  
-    <Switch>
 
     <Route exact path="/gallery"> <Gallery /> </Route>
 

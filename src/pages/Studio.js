@@ -1,22 +1,56 @@
 // import { Link } from 'react-router-dom';
-// import loaded from "../pages/Index"
+import apartments from "../pages/Index"
 // import '../gallery.css';
 // import '../index.css';
 // import '../bootstrap.css';
 // import React from 'react'
 
+import { Link } from 'react-router-dom';
+import '../gallery.css';
+import '../index.css';
+import '../bootstrap.css';
 
-const Studio = (props) => {}
+
+function Studio(props) {
+
+const apartments = props.apartments.map((apartment) => (
+
+			<>
+			<div key={apartments._id} className="col-md-6" >
+
+				<Link to={`/apartments/${apartment._id}`}>
+				<button>Apt  {apartments.unit}</button>
+				</Link>
+				<br />
+
+				{<img src={apartments.media} alt={apartment.unit} /> }
+								<br />
+
+				<h3>{apartments.description}</h3>
+				<br />
+
+				<br></br>	<br></br>
+			</div> 			 
+
+			</>))
+
+		}
+
+
+	
+
+
+	  
+	  
 
 
 
-// }
+			
 
 export default Studio;
 
 
-// 	render() {
-// 		return props.apartments.map((apartment) => (
+{/* // 		return props.apartments.map((apartment) => (
 // 			<div key={apartment._id} className='apartment'>
 // 				<Link to={`/apartments/${apartment._id}`}>
 // 					<h1>{apartment.unit}</h1>
@@ -27,8 +61,6 @@ export default Studio;
 // 				<h3>{apartment.description}</h3>
 // 			</div>
 // 		)
-// 		)
+// 		) */}
 
-// };
-// }
 

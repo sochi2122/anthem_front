@@ -21,9 +21,9 @@ const Nav = (props) =>{
 
 
           <Link to="/gallery">
-        <button type="button" className="nav-link" >Gallery </button>
-         </Link>  
-
+          <button type="button" className="navbar-brand"> 
+          <a className="nav-link active" href="/gallery">  Gallery 
+          </a></button></Link>
 
 
 
@@ -39,6 +39,10 @@ const Nav = (props) =>{
         </button> </Link>
 
 
+        <Link to="/studio">
+        <button class="navbar-brand" type="button" >
+          <a className="nav-link" href="/studio">Test </a>
+        </button></Link>
 
         
 

@@ -66,7 +66,7 @@ function Index(props) {
 
 	const loading = () => {
 
-		return <img src="https://i.ibb.co/9VK8chv/Hotel-Number0.jpg" alt="ent" width="300px" height="150px" ></img>;
+		return <img src="https://i.ibb.co/9VK8chv/Hotel-Number0.jpg" alt="ent" width="150px" height="75px" ></img>;
 	};
 
 	  return (

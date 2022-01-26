@@ -53,6 +53,7 @@ function Show(props) {
         
         
 
+   <br />
    
    
       <form onSubmit={handleSubmit}>
@@ -62,7 +63,12 @@ function Show(props) {
           name="unit"
           placeholder="unit"
           onChange={handleChange}
+          required
+						textarea 
+						className="form-control"
+						aria-label="Large" 
         />
+<br/>
 
         <input
           type="text"
@@ -70,15 +76,29 @@ function Show(props) {
           name="media"
           placeholder="media URL"
           onChange={handleChange}
+          required
+						textarea 
+						className="form-control"
+						aria-label="Large" 
         />
+        <br/>
+
         <input
           type="text"
           value={editForm.description}
           name="description"
           placeholder="description"
           onChange={handleChange}
+          required
+						textarea 
+						className="form-control"
+						aria-label="Large" 
         />
+        <br/>
+
         <input type="submit" value="Update Apartment" />
+        <br/>
+
       </form>
     </div>
   )
