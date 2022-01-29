@@ -44,10 +44,10 @@ Initial Wireframes:
 See ERD below:
 
 
-//Pic of ERD
 
 
 
+<img width="652" alt="Screen Shot 2022-01-29 at 3 10 52 PM" src="https://user-images.githubusercontent.com/90932673/151676125-570bf689-8ad0-4a22-8134-e2a1467d9cd0.png">
 
 
 
