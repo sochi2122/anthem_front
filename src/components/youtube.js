@@ -20,8 +20,8 @@ const modalStyles = {
 
 // Render function for Prismic headless CMS pages
 function Youtube() {
-  const [modalIsOpen, setModalIsOpen] = React.useState(false);
-  const [videoUrl, setVideoUrl] = React.useState("");
+  const [modalIsOpen, setModalIsOpen] = React.useState('https://youtu.be/jT6pN0SAleg');
+  const [videoUrl] = React.useState("");
   let videoCode;
   if (videoUrl) {
     videoCode = videoUrl.split("v=")[1].split("&")[0];
@@ -52,7 +52,25 @@ function Youtube() {
         <div></div>
       </div>
       <div>
-        <input value={videoUrl} onChange={(e) => setVideoUrl(e.target.value)} />
+      <form method="submit" action="submit"> 
+
+      <input
+      
+						type='url'
+						value="https://youtu.be/jT6pN0SAleg"
+						name='media'
+						placeholder='media URL'
+						textarea 
+						required
+						className="form-control"
+						aria-label="Large" 
+					/>
+
+					<br />
+        <input button='submit' type='submit' value='Play Video' />
+				</form>
+
+
         <div>
           <YouTube
             videoId={videoCode}
@@ -70,8 +88,6 @@ function Youtube() {
         style={modalStyles}
       >
         <div>
-          <h3>Completed the exercise?</h3>
-          <button onClick={handleExerciseComplete}>Complete exercise</button>
         </div>
       </Modal>
     </div>
