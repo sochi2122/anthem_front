@@ -2,21 +2,16 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../gallery.css';
 import '../index.css';
-import '../bootstrap.css';
+import React from 'react'
 
 
 function Index(props) {
 
 	const [newForm, setNewForm] = useState(
-	// 	{
-	// 	unit: '',
-	// 	media: '',
-	// 	description: '',
-	// }
+
 	
 	[]);
 
-	// handleChange - will capture user input as it's typed 
 	const handleChange = (event) => {
 		setNewForm((prevState) => ({
 			...prevState,
@@ -73,6 +68,8 @@ function Index(props) {
   <> 
 
 <div className="row">
+
+<br/><br/>
 {props.apartments ? loaded() : loading()}
 </div>
 <br />

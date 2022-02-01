@@ -33,15 +33,15 @@ function App() {
 
     <Route exact path="/gallery"> <Gallery /> </Route>
 
-    <Route path="/show"> <Show /> </Route>
+    <Route exact path="/show"> <Show /> </Route>
 
-    <Route path="/studio"> <Studio /> </Route>
+    <Route exact path="/studio"> <Studio /> </Route>
 
-    <Route path="/vr"> <Vr /> </Route>
+    <Route exact path="/vr"> <Vr /> </Route>
 
-    <Route path="/index"> <Index /> </Route>
+    <Route exact path="/index"> <Index /> </Route>
 
-    <Route path="/show"> <Show /> </Route>
+    <Route exact path="/show"> <Show /> </Route>
 
 
 

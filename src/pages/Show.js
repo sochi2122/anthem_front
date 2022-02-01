@@ -1,11 +1,11 @@
 import { useState } from "react"
+import  React from "react"
 
 
 import '../gallery.css';
 import '../index.css';
 import '../bootstrap.css';
 
-//xdetailsz page
 
 function Show(props) {
 
@@ -31,10 +31,10 @@ function Show(props) {
     props.history.push("/")
   }
 
-  const removeApartment = () => {
-    props.deleteApartments(apartment._id);
-    props.history.push("/");
-  };
+  // const removeApartment = () => {
+  //   props.deleteApartments(apartment._id);
+  //   props.history.push("/");
+  // };
 
     return (
 

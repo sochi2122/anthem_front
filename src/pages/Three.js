@@ -6,7 +6,7 @@ import '../bootstrap.css';
 const Three = (props) => {
 
     return ( 
-
+<>
         <div className="three">
 
             <h1>About this app</h1>
@@ -32,9 +32,11 @@ const Three = (props) => {
             <form action="/items/<%= b._id %>?_method=DELETE" method="POST">
                 <input type="submit" value="DELETE "> </form>
             <div style="padding: 5px;"><button><a href="/items/<%= b._id %>/edit" value="EDIT ">EDIT
-                    </a></button></div>
+                    </a><
+                        /button></div>
             </form>
         </div>
+
         <% }) %>
 
 
@@ -49,10 +51,13 @@ const Three = (props) => {
 
 
 
-</main>
+</Main>
 
 </div>
 
+
+
+</>
     )};
 
 

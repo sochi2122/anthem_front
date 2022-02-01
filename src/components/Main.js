@@ -5,6 +5,7 @@ import Show from "../pages/Show"
 import '../gallery.css';
 import '../index.css';
 import '../bootstrap.css';
+import  React from "react"
 
 
 

@@ -19,7 +19,7 @@ const modalStyles = {
 };
 
 // Render function for Prismic headless CMS pages
-function Content() {
+function Youtube() {
   const [modalIsOpen, setModalIsOpen] = React.useState(false);
   const [videoUrl, setVideoUrl] = React.useState("");
   let videoCode;
@@ -78,4 +78,4 @@ function Content() {
   );
 }
 
-export default Content;
+export default Youtube;

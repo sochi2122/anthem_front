@@ -33,15 +33,11 @@ const Nav = (props) =>{
         </button></Link>
 
 
-        <Link to="/index">
-        <button className="navbar-brand" type="button">
-          <a className="nav-link" href="/index">Create</a>
-        </button> </Link>
-
+     
 
         <Link to="/studio">
         <button class="navbar-brand" type="button" >
-          <a className="nav-link" href="/studio">Test </a>
+          <a className="nav-link" href="/studio">Studio </a>
         </button></Link>
 
         

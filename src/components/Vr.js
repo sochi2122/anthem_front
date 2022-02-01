@@ -2,7 +2,6 @@ import React from "react"
 import '../gallery.css';
 import '../index.css';
 import '../bootstrap.css';
-import  Bootstrap from 'react-bootstrap';
 
 
 
