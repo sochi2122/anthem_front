@@ -110,6 +110,8 @@ function Index(props) {
 						textarea 
 						className="form-control"
 						aria-label="Large" 
+						min="501" 
+						max="2431"
 					/>
 					<br />
 
