@@ -68,7 +68,7 @@ function Youtube() {
 					/>
 
 					<br />
-        <input button='submit' type='submit' value='Play Video' />
+					<input button='submit' type='submit' value=' Play' />
 				</form>
 
 
