@@ -64,6 +64,7 @@ function Youtube() {
 						required
 						className="form-control"
 						aria-label="Large" 
+            alt="video URL"
 					/>
 
 					<br />
